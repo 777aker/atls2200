@@ -8,7 +8,7 @@
     .heading {
       color: #803B1F;
       background-color: #F0C016;
-      font-family: ;
+      font-family: 'Grenze Gotisch', cursive;
       font-size: ;
       text-transform: ;
       text-align: center;
@@ -16,15 +16,15 @@
     .navigation {
       color: #209AE6;
       background-color: #E6622C;
-      font-family: ;
+      font-family: 'Press Start 2P', cursive;
       font-size: ;
       text-transform: ;
       text-align: ;
     }
     .typographichierarchy {
-      color: ;
+      color: #803B1F;
       background-color: ;
-      font-family: ;
+      font-family: 'Pompiere', cursive;
       font-size: ;
       text-transform: ;
       text-align: ;
@@ -34,31 +34,47 @@
       color: black;
       background-color: white;
       text-align: center;
+      font-family: 'Courgette', cursive;
     }
     .article1 {
-      color: ;
-      background-color: ;
-      font-family: ;
+      color: #E6622C;
+      background-color: #803B1F;
+      font-family: 'Pompiere', cursive;;
       font-size: ;
       text-transform: ;
       text-align: ;
     }
     .extras {
       color: ;
-      background-color: ;
-      font-family: ;
+      background-color: #E6622C;
+      font-family: 'Pompiere', cursive;
       font-size: ;
       text-transform: ;
       text-align: ;
     }
   </style>
-  <title>Title of newspaper</title>
+  <title>Interweb News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cinzel+Decorative&family=Courgette&family=Grenze+Gotisch:wght@100&family=PT+Sans+Caption&family=Pompiere&family=Press+Start+2P&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
+
+<!--
+font-family: 'Bungee', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Grenze Gotisch', cursive;
+font-family: 'Pompiere', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Special Elite', cursive;
+-->
 
 <body>
   <div class="heading" id="headingdiv">
     <!-- Logo: come up with a name and logo, h1 -->
-    <h1>Title</h1>
+    <h1>Inter-Web News from Spider Chronicles</h1>
+    <img src="img/spiderlogo.png" alt="Spider Chronicles Logo">
     <!-- date, h6 -->
     <h6>
     <script> document.write(new Date().toDateString()); </script>
@@ -78,18 +94,28 @@
         <a href="#extrasdiv">Extras</a>
       </nav>
     </h5>
+
   </div>
 
   <!-- Typographic Hierarchy: all heading tags, p, strong, em -->
   <div class="typographichierarchy" id="typographichierarchydiv">
-
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>
+      <strong>Strong Text</strong> <br>
+      <em>Emphasized Text</em>
+    </p>
   </div>
 
   <!-- Color Palette: 4 colors, displayed in table, hexidecimal and rgb -->
   <div class="cp" id="cpdiv">
     <table>
       <thead>
-        Color Palette
+        <strong>Color Palette</strong>
       </thead>
       <tr>
         <th scope="col">Name</th>
@@ -126,12 +152,42 @@
 
   <div class="article1" id="article1div">
     <!-- Sample Article: small article including headline, subheadline, image,
-      image caption, copy for the article, h2 headline, h3 for sub headline -->
+    image caption, copy for the article, h2 headline, h3 for sub headline -->
+    <h2 style="color: #209AE6; font-family: 'Special Elite', cursive;">Beetles invade South tunnels!</h2>
+    <h3 style="color: #F0C016; font-family: 'Bungee', cursive;">Many buildings destroyed as they wreck havoc</h3>
+    <figure>
+      <img src="https://www.nomadsguidetoturkey.com/wp-content/uploads/2020/11/Derinkuyu-Underground-City-Cappadocia.jpg"
+      alt="underground caves" width="600" height="500">
+      <figcaption>South tunnels entrance</figcaption>
+    </figure>
+    <p>The Spiderman Guard tried to push back the Beetles, but were unsuccessful. Currently they are being engaged near the South tunnels, however, many buildings and homes have already been destroyed. Refugees are funneling toward the South West tunnels. Please avoid any Sourthern areas.</p>
   </div>
 
   <div class="extras" id="extrasdiv">
     <!-- Extras: icons, buttons, input form, additional elements, make robust design system, h2 -->
-
+    <h2>Extras</h2>
+    <form>
+      <h4>Someone missing after attack?</h4>
+      <label for="fn">First Name:</label>
+      <input type="text" id="fn" name="fn">
+      <br>
+      <label for="ci">Contact Info:</label>
+      <input type="text" id="ci" name="ci">
+      <br>
+      <label for="mn">Missing person's name:</label>
+      <input type="text" id="mn" name="mn">
+      <p>Hour's Missing</p>
+      <input type="radio" id="12" name="hm" value="12">
+      <label for="hm">1 - 2 hours</label>
+      <br>
+      <input type="radio" id="26" name="hm" value="26">
+      <label for="26">2 - 6 hours</label>
+      <br>
+      <input type="radio" id="6" name="hm" value="6">
+      <label for="6">6+ hours</label>
+      <br>
+      <input type="submit" name="sub">
+    </form>
     <!-- map? with hot spots? -->
 
     <!-- side scrolling things? like shows in Hulu and netflix and crunchy -->
