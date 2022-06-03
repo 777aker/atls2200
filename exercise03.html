@@ -1,0 +1,143 @@
+<!-- group each section in its own div -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .heading {
+      color: #803B1F;
+      background-color: #F0C016;
+      font-family: ;
+      font-size: ;
+      text-transform: ;
+      text-align: center;
+    }
+    .navigation {
+      color: #209AE6;
+      background-color: #E6622C;
+      font-family: ;
+      font-size: ;
+      text-transform: ;
+      text-align: ;
+    }
+    .typographichierarchy {
+      color: ;
+      background-color: ;
+      font-family: ;
+      font-size: ;
+      text-transform: ;
+      text-align: ;
+    }
+    .cp {
+      border: 5px outset #E6622C;
+      color: black;
+      background-color: white;
+      text-align: center;
+    }
+    .article1 {
+      color: ;
+      background-color: ;
+      font-family: ;
+      font-size: ;
+      text-transform: ;
+      text-align: ;
+    }
+    .extras {
+      color: ;
+      background-color: ;
+      font-family: ;
+      font-size: ;
+      text-transform: ;
+      text-align: ;
+    }
+  </style>
+  <title>Title of newspaper</title>
+</head>
+
+<body>
+  <div class="heading" id="headingdiv">
+    <!-- Logo: come up with a name and logo, h1 -->
+    <h1>Title</h1>
+    <!-- date, h6 -->
+    <h6>
+    <script> document.write(new Date().toDateString()); </script>
+    </h6>
+    <!-- weather conditions, h4 -->
+    <h4>Wheather Forecast: Cloudy, with a chance of meatballs</h4>
+  </div>
+
+  <div class="navigation" id="navigationdiv">
+    <!-- Navigation: create navigation links to various sections, h5 -->
+    <h5>
+      <nav>
+        <a href="#headingdiv">Heading</a>
+        <a href="#typographichierarchydiv">Typographic Heirarchy</a>
+        <a href="#cpdiv">Color Pallete</a>
+        <a href="#article1div">Article</a>
+        <a href="#extrasdiv">Extras</a>
+      </nav>
+    </h5>
+  </div>
+
+  <!-- Typographic Hierarchy: all heading tags, p, strong, em -->
+  <div class="typographichierarchy" id="typographichierarchydiv">
+
+  </div>
+
+  <!-- Color Palette: 4 colors, displayed in table, hexidecimal and rgb -->
+  <div class="cp" id="cpdiv">
+    <table>
+      <thead>
+        Color Palette
+      </thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">RGB</th>
+        <th scope="col">Hexidecimal</th>
+      </tr>
+      <tr style="color: #803B1F;">
+        <th scope="row">Saddle Brown</th>
+        <td>R: 153, G: 70, B: 37</td>
+        <td>#803B1F</td>
+      </tr>
+      <tr style="color: #E6622C;">
+        <th scope="row">Coral</th>
+        <td>R: 230, G: 98, B: 44</td>
+        <td>#E6622C</td>
+      </tr>
+      <tr style="color: #209AE6;">
+        <th scope="row">Cornflower Blue</th>
+        <td>R: 33, G: 154, B: 230</td>
+        <td>#209AE6</td>
+      </tr>
+      <tr style="color: #5E4B04">
+        <th scope="row">Sandy Brown</th>
+        <td>R: 153, G: 121, B: 6</td>
+        <td>#5E4B04</td>
+      </tr>
+      <tr style="color: #F0C016;">
+        <th scope="row">Golden Rod</th>
+        <td>R: 230, G: 184, B: 21</td>
+        <td>#F0C016</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="article1" id="article1div">
+    <!-- Sample Article: small article including headline, subheadline, image,
+      image caption, copy for the article, h2 headline, h3 for sub headline -->
+  </div>
+
+  <div class="extras" id="extrasdiv">
+    <!-- Extras: icons, buttons, input form, additional elements, make robust design system, h2 -->
+
+    <!-- map? with hot spots? -->
+
+    <!-- side scrolling things? like shows in Hulu and netflix and crunchy -->
+
+  </div>
+
+</body>
+
+</html>
