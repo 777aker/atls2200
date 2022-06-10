@@ -1,0 +1,47 @@
+body {
+  font-family: Garamond, serif;
+}
+
+.top>p {
+  font-size: 24px;
+}
+
+.top {
+  color: #803B1F;
+  background-color: #F0C016;
+  font-family: 'Grenze Gotisch', cursive;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+}
+
+.left {
+  background-color: #803B1F;
+  color: #E6622C;
+}
+
+.left>h2 {
+  color: #209AE6;
+  font-family: 'Courgette', cursive;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.left>h3 {
+  color: #F0C016;
+  margin-bottom: -5px;
+  font-family: 'Grenze Gotisch', cursive;
+}
+
+.right {
+  background-color: #E6622C;
+  color: #F0C016;
+}
+
+.right>h4 {
+  color: #209AE6;
+}

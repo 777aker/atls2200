@@ -1,0 +1,25 @@
+.title {
+
+}
+
+.intro {
+
+}
+
+.navi {
+  background-color: #803B1F;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.navi>a {
+  background-color: #E6622C;
+  //color: #209AE6;
+  //height: 80px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  border: 5px solid #F0C016;
+  font-family: 'Press Start 2P', cursive;
+}

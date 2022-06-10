@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+
+<head>
+  <title>Example</title>
+  <meta charset="UTF-8">
+  <style>
+    .flex-container {
+
+      background-color: pink;
+      display: flex;
+      //flex-direction: column;
+
+      //flex-direction: column-reverse;
+      // flex-direction: row;
+      // flex-direction: row-reverse;
+      // flex-direction: row; 
+      // flex-direction: row-reverse;
+
+      /* flex-wrap: wrap; specifies whether the flex items should wrap or not. */
+      // flex-wrap: nowrap;
+      // flex-wrap: wrap-reverse;
+       flex-flow: row wrap;
+
+
+    }
+
+    .flex-container>div { /* > is the CSS child selector */
+      background-color: #f1f1f1;
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+</body>
+
+</html>
