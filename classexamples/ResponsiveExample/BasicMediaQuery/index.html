@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+
+<head>
+  <title>Example</title>
+  <meta charset="UTF-8">
+  <style>
+  div {
+    font-size: 10em;
+  }
+
+    body {
+      background-color: yellow;
+
+    }
+
+    .small { display: none; }
+    .medium { display: none; }
+
+    /* On screens that are 992px or less, set the background color to orange */
+    @media screen and (max-width: 992px) {
+      body {
+        background-color: orange;
+
+      }
+      .medium { display: inline-block; }
+      .small { display: none; }
+      .large { display: none; }
+    }
+
+    /* On screens that are 600px or less, set the background color to red */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: red;
+      }
+      .small { display: inline-block; }
+      .medium { display: none; }
+      .large { display: none; }
+    }
+    @media (max-width: 1200px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <span class="small">&#129397;</span>
+    <span class="medium">&#128556;</span>
+    <span class="large">&#128523;</span>
+  </div>
+
+</body>
+
+</html>

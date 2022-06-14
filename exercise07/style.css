@@ -1,0 +1,90 @@
+body {
+  font-family: Garamond, serif;
+}
+
+.top>p {
+  font-size: 24px;
+}
+
+.top {
+  color: #803B1F;
+  background-color: #F0C016;
+  font-family: 'Grenze Gotisch', cursive;
+  text-align: center;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #209AE6;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px 5px;
+  color: #209AE6;
+}
+
+.content>div {
+  background-color: #803B1F;
+}
+
+.intro {
+  grid-column: 1 / 4;
+}
+
+.intro>p {
+  margin-left: 5px;
+}
+
+.left {
+  grid-column: 1 / 3;
+  color: #E6622C;
+}
+
+@media screen and (min-width: 728px) {
+  .left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #WorkHistory {
+    grid-column: 1 / 3;
+  }
+
+  #Education {
+    grid-column: 1 / 3;
+  }
+}
+
+.left>div {
+  margin-left: 5px;
+}
+
+h2 {
+  color: #209AE6;
+  font-family: 'Courgette', cursive;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+h3 {
+  color: #F0C016;
+  margin-bottom: -5px;
+  font-family: 'Grenze Gotisch', cursive;
+}
+
+.right {
+  //background-color: #E6622C;
+  color: #F0C016;
+}
+
+.right>div {
+  margin-left: 5px;
+}
+
+h4 {
+  color: #209AE6;
+}
