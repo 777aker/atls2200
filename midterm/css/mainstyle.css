@@ -3,24 +3,72 @@
 */
 
 .eye {
-  display: inline;
+  position: absolute;
+  top: 0%;
+  left: 50%;
 }
 
-.eye>img {
-  position: relative;
+.eye > img {
+  position: absolute;
   transform-origin: center;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
+
 }
 
 .outereye {
-
+  transform: translate(-50%, 0%);
 }
 
 .middleeye {
-
+  /* @keyframes duration | easing-function |  direction | repeat | play-state  */
+  animation: middleeyeanimation 20s ease-in-out forwards infinite;
 }
 
 .innereye {
+  animation: innereyeanimation 20s ease-in-out forwards infinite;
+}
 
+@keyframes middleeyeanimation {
+  0% {
+    transform: translate(-50%, 3%);
+  }
+
+  25% {
+    transform: translate(-50%, 3%);
+  }
+
+  50% {
+    transform: translate(-65%, 0%);
+  }
+
+  75% {
+    transform: translate(-35%, 0%);
+  }
+
+  100% {
+    transform: translate(-50%, 3%);
+  }
+}
+
+@keyframes innereyeanimation {
+ 0% {
+   transform: translate(-50%, 7%);
+ }
+
+ 25% {
+   transform: translate(-50%, 7%);
+ }
+
+ 50% {
+   transform: translate(-69%, 0%);
+ }
+
+ 75% {
+   transform: translate(-32%, 3%)
+ }
+
+ 100% {
+   transform: translate(-50%, 7%);
+ }
 }
