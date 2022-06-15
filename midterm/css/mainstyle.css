@@ -1,0 +1,26 @@
+/*
+  eye styles and animation
+*/
+
+.eye {
+  display: inline;
+}
+
+.eye>img {
+  position: relative;
+  transform-origin: center;
+  top: 0;
+  left: 0;
+}
+
+.outereye {
+
+}
+
+.middleeye {
+
+}
+
+.innereye {
+
+}

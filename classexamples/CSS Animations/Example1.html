@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <style>
+
+	#box {
+	width: 100px;
+	height: 100px;
+	padding: 1em;
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+
+	/* CSS Transitions */
+  /* note that we define the transition in the non-transitioned state*/
+
+	transition: background-color 1s;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.8);
+  /*transition-delay: 1s;*/
+
+  /* SHORTHAND */
+  /*transition: background-color 1s linear 1s;*/
+
+	}
+
+	#box:hover {
+	background-color: pink;
+	}
+
+    </style>
+  </head>
+  <body>
+
+
+	<div id="box">Hello World!</div>
+
+  </body>
+</html>

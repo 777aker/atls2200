@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example</title>
+
+  <style>
+
+  /* initial state */
+  #outerspace {
+    position: relative;
+    height: 400px;
+    background: #0c0440 url(outerspace.jpeg);
+    color: #fff;
+  }
+  div.rocket {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    transition: 3s ease-in;
+  }
+  div.rocket div {
+    width: 92px;
+    height: 215px;
+    background: url(rocket.gif) no-repeat;
+    transition: 2s ease-in-out;
+  }
+
+  /* hover final state */
+  #outerspace:hover div.rocket {
+    transform: translate(540px,-200px);
+  }
+  #outerspace:hover div.rocket div {
+    transform: rotate(70deg);
+  }
+
+  </style>
+</style>
+</head>
+<body>
+
+  <div id="outerspace">
+   <div class="rocket">
+    <div><!-- rocket --></div>
+  </div>
+
+</div>
+
+
+
+</body>
+</html>

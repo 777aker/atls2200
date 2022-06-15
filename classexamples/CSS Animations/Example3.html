@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title> 
+	<style>
+	#exampletransitionc {
+		width: 520px;
+	}
+	#exampletransitionc div {
+		width: 100px;
+		margin: 5px 0;
+		padding: 5px;
+		color: white;
+		background-color: #ED8029;
+		text-align: right;
+		border-radius: 5px;
+	}
+	#exampletransitionc:hover div {
+		width: 500px;
+		background-color: blue;
+	}
+	#exampletransitionc div.no {
+
+		transition: 3s linear;
+
+	}
+	#exampletransitionc div.one {
+
+		transition: 3s linear 1s;
+	}
+	#exampletransitionc div.two {
+
+		transition: 3s linear -2s;
+	}
+	#exampletransitionc div.three {
+
+		transition: 3s linear 3s;
+	}
+	#exampletransitionc div.five {
+
+		transition: 3s linear 5s;
+	}
+	#exampletransitionc div.minustwo {
+
+		transition: 3s linear -2s;
+	}
+	</style>
+	</head>
+	<body>
+		<div id="exampletransitionc">
+			<div class="minustwo">-2s delay</div>
+			<div class="no">no delay</div>
+			<div class="one">1s delay</div>
+			<div class="two">2s delay</div>
+			<div class="three">3s delay</div>
+			<div class="five">5s delay</div>
+		</div>
+	</body>
+	</html>
