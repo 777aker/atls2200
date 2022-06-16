@@ -1,3 +1,44 @@
+
+#button {
+  background-color: black;
+  color: white;
+  font-size: 24pt;
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+
+#buttonp {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-family: 'Indie Flower', cursive;
+  color: rgb(252, 72, 0);
+}
+
+#button:hover p {
+  display: block;
+}
+
+#consempation {
+  font-size: 6pt;
+}
+
+.Introduction {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: rgb(179, 179, 179);
+}
+
 /*
   eye styles and animation
 */
@@ -13,7 +54,6 @@
   transform-origin: center;
   top: 0%;
   left: 0%;
-
 }
 
 .outereye {
