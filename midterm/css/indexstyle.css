@@ -31,6 +31,10 @@
   animation: buttonanimation 20s ease-in-out forwards infinite;
 }
 
+#button:hover {
+  background-color: rgb(99, 99, 99);
+}
+
 /* while the eye is looking hide the text */
 @keyframes buttonanimation {
   0% {
