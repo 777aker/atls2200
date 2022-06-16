@@ -4,8 +4,10 @@
   top: 100%;
   left: 100%;
   transform: translate(-110%, -100%);
-  width: 200px;
+  width: 180px;
   text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
 }
 
 .thenounproject:hover {
@@ -19,6 +21,8 @@
   font-size: 24pt;
   padding: 15px 20px;
   border-radius: 12px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
 }
 
 #buttonp {
