@@ -1,4 +1,4 @@
-
+/* making a nice button */
 #button {
   background-color: black;
   color: white;
@@ -15,10 +15,32 @@
   transform: translate(-50%, 0%);
   font-family: 'Indie Flower', cursive;
   color: rgb(252, 72, 0);
+  animation: buttonanimation 20s ease-in-out forwards infinite;
 }
 
+/* make the text visible only if hovering over button */
 #button:hover p {
   display: block;
+}
+
+/* while the eye is looking hide the button */
+@keyframes buttonanimation {
+  0% {
+    visibility: hidden;
+  }
+
+  30% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
 #consempation {
