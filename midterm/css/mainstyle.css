@@ -8,7 +8,6 @@
 }
 
 #buttonp {
-  display: none;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -18,29 +17,32 @@
   animation: buttonanimation 20s ease-in-out forwards infinite;
 }
 
-/* make the text visible only if hovering over button */
-#button:hover p {
-  display: block;
-}
-
-/* while the eye is looking hide the button */
+/* while the eye is looking hide the text */
 @keyframes buttonanimation {
   0% {
     visibility: hidden;
   }
-
-  30% {
+  35% {
     visibility: hidden;
   }
   50% {
     visibility: visible;
   }
-  75% {
+  80% {
     visibility: hidden;
   }
   100% {
     visibility: hidden;
   }
+}
+
+/* if they're not hovering still hide the text */
+#button:not(hover) p {
+  opacity: 0%;
+}
+
+#button:hover p {
+  opacity: 100%;
 }
 
 #consempation {
