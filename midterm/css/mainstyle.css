@@ -1,7 +1,73 @@
+/* facility background */
+body {
+  background-color: rgb(179, 179, 179);
+}
+
+/* making a nice button */
+button {
+  background-color: black;
+  color: white;
+  font-size: 18pt;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: rgb(99, 99, 99);
+}
+
+/* centering div on screen */
+div {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px 10px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  align-items: center;
+}
+
+.text {
+  grid-column: 1 / 4;
+}
+
+/* hide the content until intro animation over */
+.content {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  animation: contentanimation 1s ease-out forwards 1;
+}
+
+@keyframes contentanimation {
+  0% {
+    opacity: 0%;
+  }
+
+  90% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%
+  }
+}
+
 /* intro animation */
 /* a div holds all these things we use */
 .animation {
-  animation: mainanimation 20s ease-in-out forwards 1;
+  animation: mainanimation 1s ease-in-out forwards 1;
   height: 100vh;
 }
 
@@ -20,7 +86,7 @@
 
 /* the mouse animation */
 #mouse {
-  position: relative;
+  position: absolute;
   left: 0%;
   top: 0%;
   transform: translate(-50%, 50vh) scaleX(-1);
@@ -32,13 +98,13 @@
     transform: translate(80vw, 50vh) scaleX(-1);
   }
 
-  9% {
-    transform: translate(50vw, 50vh);
+  8.5% {
+    transform: translate(45vw, 50vh);
     visibility: hidden;
   }
 
   100% {
-    transform: translate(50vw, 50vh);
+    transform: translate(45vw, 50vh);
     visibility: hidden;
   }
 }
@@ -55,11 +121,11 @@
 
 @keyframes boxanimation {
   5% {
-    transform: translate(45vw, -100%);
+    transform: translate(40vw, -100%);
   }
 
   10% {
-    transform: translate(45vw, 50vh);
+    transform: translate(40vw, 50vh);
   }
 
   20% {
@@ -71,7 +137,7 @@
   }
 
   100% {
-    transform: translate(45vw, 50vh);
+    transform: translate(40vw, 50vh);
     opacity: 0%;
   }
 }
@@ -86,15 +152,15 @@
 
 @keyframes cageanimation {
   10% {
-    transform: translate(45vw, -150%) scale(1.5);
+    transform: translate(40vw, -150%) scale(1.5);
   }
 
   20% {
-    transform: translate(45vw, 50vh) scale(1.5);
+    transform: translate(40vw, 50vh) scale(1.5);
   }
 
   30% {
-    transform: translate(45vw, 50vh) scale(1);
+    transform: translate(40vw, 50vh) scale(1);
     opacity: 100%;
   }
 
@@ -103,7 +169,7 @@
   }
 
   100% {
-    transform: translate(45vw, 50vh);
+    transform: translate(40vw, 50vh);
     opacity: 0%;
   }
 }
@@ -118,25 +184,25 @@
 
 @keyframes fancycage {
   20% {
-    transform: translate(45vw, -150%) scale(1.5);
+    transform: translate(40vw, -150%) scale(1.5);
   }
 
   30% {
-    transform: translate(45vw, 50vh) scale(1.5);
+    transform: translate(40vw, 50vh) scale(1.5);
   }
 
   40% {
-    transform: translate(45vw, 50vh) scale(1);
+    transform: translate(40vw, 50vh) scale(1);
     opacity: 100%;
   }
 
   50% {
-    transform: translate(45vw, 50vh);
+    transform: translate(40vw, 50vh);
     opacity: 0%;
   }
 
   100% {
-    transform: translate(45vw, 50vh);
+    transform: translate(40vw, 50vh);
     opacity: 0%;
   }
 }
@@ -151,15 +217,15 @@
 
 @keyframes prisoncageanimation {
   30% {
-    transform: translate(45vw, -150%) scale(1.5);
+    transform: translate(40vw, -150%) scale(1.5);
   }
 
   40% {
-    transform: translate(45vw, 50vh) scale(1.5);
+    transform: translate(40vw, 50vh) scale(1.5);
   }
 
   50% {
-    transform: translate(45vw, 50vh) scale(1);
+    transform: translate(40vw, 50vh) scale(1);
     opacity: 100%;
   }
 
@@ -168,7 +234,7 @@
   }
 
   100% {
-    transform: translate(45vw, 50vh);
+    transform: translate(40vw, 50vh);
     opacity: 0%;
   }
 }
@@ -177,21 +243,21 @@
   position: absolute;
   left: 0%;
   top: 0%;
-  transform: translate(50%, -100%);
+  transform: translate(50%, -200%);
   animation: prisonanimation 20s ease-in-out forwards 1;
 }
 
 @keyframes prisonanimation {
   40% {
-
+    transform: translate(40vw, -200%) scale(2);
   }
 
   50% {
-
+    transform: translate(40vw, 40vh) scale(2);
   }
 
   100% {
-
+    transform: translate(40vw, 40vh) scale(2);
   }
 }
 
@@ -204,7 +270,51 @@
 }
 
 @keyframes barbwireanimation {
+  0% {
+    transform: translate(10vw, 60vh);
+    opacity: 0%;
+  }
 
+  50% {
+    transform: translate(10vw, 60vh);
+    opacity: 0%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translate(10vw, 60vh);
+  }
+}
+
+#barbwire2 {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -100%);
+  animation: barbwireanimation2 20s ease-in-out forwards 1;
+}
+
+@keyframes barbwireanimation2 {
+  0% {
+    transform: translate(70vw, 60vh);
+    opacity: 0%;
+  }
+
+  50% {
+    transform: translate(70vw, 60vh);
+    opacity: 0%;
+  }
+
+  60% {
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translate(70vw, 60vh);
+  }
 }
 
 #trespassing {
@@ -215,8 +325,42 @@
   animation: trespassinganimation 20s ease-in-out forwards 1;
 }
 
-@keyframes trespassing {
+@keyframes trespassinganimation {
+  0% {
+    transform: translate(40vw, 50vh) scale(3);
+    opacity: 0%;
+  }
 
+  50% {
+    transform: translate(40vw, 50vh) scale(3);
+    opacity: 0%;
+  }
+
+  70% {
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translate(40vw, 50vh) scale(3);
+  }
+}
+
+#welcome {
+  animation: welcomeanimation 20s ease-in-out forwards 1;
+}
+
+@keyframes welcomeanimation {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 0%;
+  }
+
+  80% {
+    opacity: 100%;
+  }
 }
 
 #fisttrap {
@@ -229,26 +373,4 @@
 
 @keyframes fistrap {
 
-}
-
-/* hide the content until intro animation over */
-.content {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  animation: contentanimation 20s ease-out forwards 1;
-}
-
-@keyframes contentanimation {
-  0% {
-    opacity: 0%;
-  }
-
-  90% {
-    opacity: 0%;
-  }
-
-  100% {
-    opacity: 100%
-  }
 }
