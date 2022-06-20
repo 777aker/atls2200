@@ -3,6 +3,11 @@ body {
   background-color: rgb(179, 179, 179);
 }
 
+em {
+  font-family: 'Indie Flower', cursive;
+  color: rgb(252, 72, 0);
+}
+
 /* making a nice button */
 button {
   background-color: black;
