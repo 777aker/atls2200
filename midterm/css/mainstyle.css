@@ -1,0 +1,254 @@
+/* intro animation */
+/* a div holds all these things we use */
+.animation {
+  animation: mainanimation 20s ease-in-out forwards 1;
+  height: 100vh;
+}
+
+@keyframes mainanimation {
+  0% {
+    opacity: 100%;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+/* the mouse animation */
+#mouse {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  transform: translate(-50%, 50vh) scaleX(-1);
+  animation: mouseanimation 20s ease-in-out forwards 1;
+}
+
+@keyframes mouseanimation {
+  5% {
+    transform: translate(80vw, 50vh) scaleX(-1);
+  }
+
+  9% {
+    transform: translate(50vw, 50vh);
+    visibility: hidden;
+  }
+
+  100% {
+    transform: translate(50vw, 50vh);
+    visibility: hidden;
+  }
+}
+
+/* a whole lot of animations */
+/* the introduction to what is happening here */
+#box {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -100%);
+  animation: boxanimation 20s ease-in-out forwards 1;
+}
+
+@keyframes boxanimation {
+  5% {
+    transform: translate(45vw, -100%);
+  }
+
+  10% {
+    transform: translate(45vw, 50vh);
+  }
+
+  20% {
+    opacity: 100%;
+  }
+
+  30% {
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translate(45vw, 50vh);
+    opacity: 0%;
+  }
+}
+
+#cage {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -100%);
+  animation: cageanimation 20s ease-in-out forwards 1;
+}
+
+@keyframes cageanimation {
+  10% {
+    transform: translate(45vw, -150%) scale(1.5);
+  }
+
+  20% {
+    transform: translate(45vw, 50vh) scale(1.5);
+  }
+
+  30% {
+    transform: translate(45vw, 50vh) scale(1);
+    opacity: 100%;
+  }
+
+  40% {
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translate(45vw, 50vh);
+    opacity: 0%;
+  }
+}
+
+#fancycage {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -150%);
+  animation: fancycage 20s ease-in-out forwards 1;
+}
+
+@keyframes fancycage {
+  20% {
+    transform: translate(45vw, -150%) scale(1.5);
+  }
+
+  30% {
+    transform: translate(45vw, 50vh) scale(1.5);
+  }
+
+  40% {
+    transform: translate(45vw, 50vh) scale(1);
+    opacity: 100%;
+  }
+
+  50% {
+    transform: translate(45vw, 50vh);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translate(45vw, 50vh);
+    opacity: 0%;
+  }
+}
+
+#prisoncage {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -150%);
+  animation: prisoncageanimation 20s ease-in-out forwards 1;
+}
+
+@keyframes prisoncageanimation {
+  30% {
+    transform: translate(45vw, -150%) scale(1.5);
+  }
+
+  40% {
+    transform: translate(45vw, 50vh) scale(1.5);
+  }
+
+  50% {
+    transform: translate(45vw, 50vh) scale(1);
+    opacity: 100%;
+  }
+
+  60% {
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translate(45vw, 50vh);
+    opacity: 0%;
+  }
+}
+
+#prison {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -100%);
+  animation: prisonanimation 20s ease-in-out forwards 1;
+}
+
+@keyframes prisonanimation {
+  40% {
+
+  }
+
+  50% {
+
+  }
+
+  100% {
+
+  }
+}
+
+#barbwire {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -100%);
+  animation: barbwireanimation 20s ease-in-out forwards 1;
+}
+
+@keyframes barbwireanimation {
+
+}
+
+#trespassing {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -100%);
+  animation: trespassinganimation 20s ease-in-out forwards 1;
+}
+
+@keyframes trespassing {
+
+}
+
+#fisttrap {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(50%, -100%);
+  animation: fisttrapanimation 20s ease-in-out forwards 1;
+}
+
+@keyframes fistrap {
+
+}
+
+/* hide the content until intro animation over */
+.content {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  animation: contentanimation 20s ease-out forwards 1;
+}
+
+@keyframes contentanimation {
+  0% {
+    opacity: 0%;
+  }
+
+  90% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%
+  }
+}
