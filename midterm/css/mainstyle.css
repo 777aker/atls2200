@@ -47,7 +47,7 @@ div {
   position: absolute;
   top: 0%;
   left: 0%;
-  animation: contentanimation 1s ease-out forwards 1;
+  animation: contentanimation 20s ease-out forwards 1;
 }
 
 @keyframes contentanimation {
@@ -67,7 +67,7 @@ div {
 /* intro animation */
 /* a div holds all these things we use */
 .animation {
-  animation: mainanimation 1s ease-in-out forwards 1;
+  animation: mainanimation 20s ease-in-out forwards 1;
   height: 100vh;
 }
 
@@ -76,8 +76,12 @@ div {
     opacity: 100%;
   }
 
-  90% {
+  80% {
     opacity: 100%;
+  }
+
+  90% {
+    opacity: 0%;
   }
   100% {
     opacity: 0%;
