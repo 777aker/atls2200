@@ -1,0 +1,53 @@
+img {
+  width: 128px;
+  height: 128px;
+}
+
+img:hover {
+  background-color: rgb(0, 130, 252);
+}
+
+/* facility background */
+body {
+  background-color: rgb(179, 179, 179);
+}
+
+/* making a nice button */
+button {
+  background-color: black;
+  color: white;
+  font-size: 18pt;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: rgb(99, 99, 99);
+}
+
+/* centering div on screen */
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  place-items: center;
+}
+
+h3 {
+  grid-column: 1 / 4;
+}
+
+p {
+  grid-column: 1 / 4;
+}
+
+ul {
+  grid-column: 1 / 4;
+  text-align: left;
+}
