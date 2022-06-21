@@ -4,9 +4,14 @@
      <meta charset="utf-8">
      <title>JavaScript Example</title>
      <link rel="stylesheet" href="style.css">
+     <!-- needs to be loaded after the elements are loaded
+      bc it uses p which won't exist yet if you run it now -->
+     <script defer src="script.js" charset="utf-8"></script>
    </head>
    <body>
      <p>Player 1: Joel</p>
-     <script src="script.js" charset="utf-8"></script>
+     <div id="mydiv">
+       Hello World!
+     </div>
    </body>
  </html>
