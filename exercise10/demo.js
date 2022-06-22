@@ -9,7 +9,7 @@ const quoteButton = document.querySelector('#js-new-quote');
 quoteButton.addEventListener('click', changeQuote);
 
 
-
+/*
 async function changeQuote() {
   console.log('clicked button');
   try {
@@ -26,11 +26,32 @@ async function changeQuote() {
     console.log('failed');
   }
 }
+*/
+const NASAext = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=1';
+
+async function changeQuote() {
+  console.log('clicked');
+  try {
+    const image = document.querySelector('#NASA-img');
+    const response = await fetch(NASAext);
+    if(!response.ok) {
+      throw Error(response.statusText);
+    }
+    const json = await response.json();
+    console.log(json.hdurl);
+    changePhoto(json.hdurl);
+    photoExplanation(json.explanation);
+
+  } catch(err) {
+    console.log(err);
+    console.log('failed');
+  }
+}
 
 function displayQuote(author, quote) {
   const quoteText = document.querySelector('#js-quote-text');
-  const quoteAuthor = document.querySelector('#js-quote-author');
-  quoteAuthor.textContent = author;
+  //const quoteAuthor = document.querySelector('#js-quote-author');
+  //quoteAuthor.textContent = author;
   quoteText.textContent = quote;
 }
 
@@ -51,11 +72,19 @@ async function loadPhoto() {
     const json = await response.json();
     console.log(json.hdurl);
     changePhoto(json.hdurl);
+    photoExplanation(json.explanation);
 
   } catch(err) {
     console.log(err);
     console.log('failed');
   }
+}
+
+function photoExplanation(text) {
+  const quoteText = document.querySelector('#js-quote-text');
+  //const quoteAuthor = document.querySelector('#js-quote-author');
+  //quoteAuthor.textContent = author;
+  quoteText.textContent = text;
 }
 
 function changePhoto(hdurl) {
