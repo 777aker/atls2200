@@ -1,5 +1,5 @@
 // API ENDPOINT
-const endpoint = 'http://quotes.stormconsultancy.co.uk/random.json';
+const endpoint = 'https://quotes.stormconsultancy.co.uk/random.json';
 //console.log(endpoint);
 
 const quoteButton = document.querySelector('#js-new-quote');
