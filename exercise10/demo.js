@@ -37,10 +37,11 @@ async function changeQuote() {
     if(!response.ok) {
       throw Error(response.statusText);
     }
+    //console.log(response);
     const json = await response.json();
-    console.log(json.hdurl);
-    changePhoto(json.hdurl);
-    photoExplanation(json.explanation);
+    console.log(json[0].hdurl);
+    changePhoto(json[0].hdurl);
+    photoExplanation(json[0].explanation);
 
   } catch(err) {
     console.log(err);
