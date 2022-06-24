@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+</body>
+<script  type="text/javascript">
+
+  const dogs = ['Bambam', 'Boomer', 'Smacky'];
+  let myFavoriteDogs = 'My dogs are called ';
+
+  let i = 0;
+
+   while (i < dogs.length) {
+     if(i === dogs.length -1){
+       myFavoriteDogs += `and ${dogs[i]}.`
+     } else {
+       myFavoriteDogs += `and ${dogs[i]}, `
+     }
+     i++; // increment
+   }
+console.log(myFavoriteDogs);
+</script>
+</html>

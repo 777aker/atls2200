@@ -1,0 +1,20 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+  gap: 10px 10px;
+  align-items: center;
+}
+
+form {
+  padding: 10px 10px;
+}
+
+label {
+  margin: 5px 5px;
+}
+
+input {
+  margin: 5px 5px;
+}

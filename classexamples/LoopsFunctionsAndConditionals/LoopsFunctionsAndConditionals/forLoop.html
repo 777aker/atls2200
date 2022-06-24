@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+</head>
+
+<body>
+  <div id="results"></div>
+  <button id="calculate">Update</button>
+  <button id="clear">Clear</button>
+</body>
+
+<script  type="text/javascript">
+  const result = document.querySelector('#results');
+
+  function calculate() {
+    for (let i = 1; i < 100; i++) { // start counting at 1
+      const newResult = `${i} x ${i} = ${i * i} / `; // calculate square
+      result.textContent += `${newResult}`;
+    }
+    results.textContent += '...finished!';
+  }
+
+  const calculateBtn = document.querySelector('#calculate');
+  const clearBtn = document.querySelector('#clear');
+
+  calculateBtn.addEventListener('click', calculate);
+  clearBtn.addEventListener('click', () => results.textContent = ''); // arrow function expression
+
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" name="button">Update</button>
+    <canvas id="canvas" width="200px" height="200px"></canvas>
+  </body>
+
+  <script  type="text/javascript">
+
+  const btn = document.querySelector('button');
+  const canvas = document.querySelector('canvas');
+  const ctx = canvas.getContext('2d'); // set the drawing context to 2D
+
+  // set variable to the width and height of the client's screen
+  const WIDTH = document.documentElement.clientWidth;
+  const HEIGHT = document.documentElement.clientHeight;
+
+  canvas.width = WIDTH;
+  canvas.height = HEIGHT;
+
+  // random number generator function
+  function random(number){
+    return Math.floor(Math.random()*number); // floor rounds a number down
+  }
+
+  // draw function
+  function draw(){
+    ctx.clearRect(0,0,WIDTH, HEIGHT);
+    for(let i = 0; i < 100; i++){
+      ctx.beginPath();
+
+    // let r = random(255);
+    // let g = random(255);
+    // let b = random(255);
+    // let a = Math.random()*1;
+    // ctx.fillStyle = `rgba(${r},${g},${b},${a})`; // ${} template literals, allow us to intert variables into the literal
+
+    ctx.fillStyle = 'rgba(255,0,0,0.5)';
+
+
+      ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
+      ctx.fill();
+    }
+
+  }
+  btn.addEventListener('click', draw); // run the draw function when we click the button
+
+
+
+
+</script>
+</html>
