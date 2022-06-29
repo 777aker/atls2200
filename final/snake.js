@@ -15,6 +15,11 @@ let changing_direction = false;
 
 document.addEventListener("keydown", changeDirection);
 
+let score = 0;
+
+let food_x;
+let food_y;
+
 // define the snake
 let snake = [
   { x: 200, y: 200 },
@@ -26,12 +31,14 @@ let snake = [
 
 // start the game
 start();
+gen_food();
 function start() {
   if(has_game_ended()) return;
 
   changing_direction = false;
   setTimeout(function onTick() {
     clearCanvas();
+    drawFood();
     moveSnake();
     drawSnake();
     start();
@@ -60,7 +67,14 @@ function drawSnakePart(snakePart) {
 function moveSnake() {
   const head = {x: snake[0].x + dx, y: snake[0].y + dy};
   snake.unshift(head);
-  snake.pop();
+  const has_eaten = snake[0].x === food_x && snake[0].y === food_y;
+  if(has_eaten) {
+    score += 1;
+    document.querySelector('#score').innerHTML = score;
+    gen_food();
+  } else {
+    snake.pop();
+  }
 }
 
 function has_game_ended() {
@@ -104,4 +118,24 @@ function changeDirection(event) {
     dx = 0;
     dy = 10;
   }
+}
+
+function drawFood() {
+  snakeCanvas_ctx.fillStyle = 'lightgreen';
+  snakeCanvas_ctx.strokestyle = 'darkgreen';
+  snakeCanvas_ctx.fillRect(food_x, food_y, 10, 10);
+  snakeCanvas_ctx.strokeRect(food_x, food_y, 10, 10);
+}
+
+function random_food(min, max) {
+  return Math.round((Math.random() * (max-min) + min) / 10) * 10;
+}
+
+function gen_food() {
+  food_x = random_food(0, snakeCanvas.width - 10);
+  food_y = random_food(0, snakeCanvas.height - 10);
+  snake.forEach(function has_snake_eaten(part) {
+    const has_eaten = part.x == food_x && part.y == food_y;
+    if (has_eaten) gen_food();
+  });
 }
