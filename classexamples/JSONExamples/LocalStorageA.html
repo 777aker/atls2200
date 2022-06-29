@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local Storage Example</title>
+    <script>
+
+      //localStorage.setItem('myCat', 'Tom');
+      // const cat = localStorage.getItem('myCat');
+      //localStorage.removeItem('myCat');
+      //localStorage.clear();
+
+    //Saving data locally
+    function save() {
+        var fieldValue = document.getElementById('textfield').value;
+        localStorage.setItem('text', fieldValue);
+        console.log(localStorage);
+
+
+    }
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="textfield" />
+    <input type="button" value="save" onclick="save()" />
+    <a href="localStorageB.html">Next Page</a>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Two ways to define an object</title>
+    <script>
+
+    const person = new Object();
+    person.firstName = "Suzzie";
+    person.lastName ="Que";
+    person.grade = "Freshman";
+    person.id = "5566";
+
+    console.log(person);
+
+    const person2 = {
+      	firstName: "David",
+      	lastName : "Franklin",
+      	id       : 5567,
+        grade    : "Junior",
+
+      }
+    };
+
+  console.log(person2);
+  console.log(person2.id);
+  console.log(person2['id']);
+
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

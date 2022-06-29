@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local Storage Example</title>
+    <script>
+
+
+    // Reading data
+    function get() {
+        var storedValue = localStorage.getItem('text');
+        if(storedValue) {
+            document.getElementById('textfield').value = storedValue;
+        }
+    }
+
+
+    </script>
+</head>
+
+<body onload="get()">
+
+    <input type="text" id="textfield" />
+
+
+</body>
+
+</html>
