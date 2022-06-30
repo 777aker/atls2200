@@ -11,6 +11,7 @@ const snake_border = 'darkblue';
 // snake velocity
 let dx = 10;
 let dy = 0;
+let velocity = 1;
 let changing_direction = false;
 
 document.addEventListener("keydown", changeDirection);
